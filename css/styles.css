@@ -1,0 +1,151 @@
+#home {
+  background-color: #d1b5c1;
+}
+.lead {
+  font-weight: 400;
+}
+
+/* Customizing Bootstrap's primary and secondary colors */
+:root {
+  --bs-primary: #5b3a6d; /* Custom deep purple for primary */
+  --bs-primary-rgb: 91, 58, 109; /* RGB equivalent of #5B3A6D */
+  --bs-secondary: #d1b5c1; /* Custom soft pinkish-purple for secondary */
+  --bs-secondary-rgb: 209, 181, 193; /* RGB equivalent of #D1B5C1 */
+}
+
+/* Override Bootstrap's primary button styles */
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: #ffffff !important; /* White text for contrast */
+}
+
+.btn-primary:hover {
+  background-color: #6c4a7e; /* Lighter shade for hover */
+  border-color: #634374;
+  color: #ffffff !important;
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #6c4a7e;
+  border-color: #634374;
+  color: #ffffff !important;
+  box-shadow: 0 0 0 0.25rem rgba(91, 58, 109, 0.5);
+}
+
+/* Override Bootstrap's secondary button styles */
+.btn-secondary {
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
+  color: #2d2d2d !important; /* Dark gray text for contrast */
+}
+
+.btn-secondary:hover {
+  background-color: #b89ea8; /* Darker shade for hover */
+  border-color: #a68f99;
+  color: #2d2d2d !important;
+}
+
+.btn-secondary:focus,
+.btn-secondary:active {
+  background-color: #b89ea8;
+  border-color: #a68f99;
+  color: #2d2d2d !important;
+  box-shadow: 0 0 0 0.25rem rgba(209, 181, 193, 0.5);
+}
+
+/* Ensure active navigation links use the primary color */
+.nav-pills .nav-link.active,
+.nav-pills .nav-link.active:hover,
+.nav-pills .nav-link.active:focus {
+  background-color: var(--bs-primary);
+  color: #ffffff !important; /* White text for contrast */
+}
+
+/* Override nav-link styles to prevent default blue */
+.nav-link {
+  color: #2d2d2d !important; /* Dark gray for non-active nav links */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #5b3a6d !important; /* Primary color on hover */
+}
+
+/* Override Bootstrap's outline secondary button for better visibility */
+.btn-outline-secondary {
+  color: #4a3c44 !important; /* Darker purple-gray for text */
+  border-color: #4a3c44 !important; /* Darker purple-gray for border */
+}
+
+.btn-outline-secondary:hover {
+  background-color: #d1b5c1; /* Secondary color for hover background */
+  color: #2d2d2d !important; /* Dark gray text for contrast */
+  border-color: #4a3c44 !important;
+}
+
+.btn-outline-secondary:focus,
+.btn-outline-secondary:active {
+  background-color: #d1b5c1;
+  color: #2d2d2d !important;
+  border-color: #4a3c44 !important;
+  box-shadow: 0 0 0 0.25rem rgba(209, 181, 193, 0.5);
+}
+
+/* Override Bootstrap's outline primary button */
+.btn-outline-primary {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--bs-primary);
+  color: #ffffff !important;
+  border-color: var(--bs-primary);
+}
+
+/* Explicitly override text-primary and text-secondary */
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+.text-secondary {
+  color: var(--bs-secondary) !important;
+}
+
+/* Override default link styles to prevent blue */
+a {
+  color: var(--bs-primary) !important; /* Use primary color for links */
+  text-decoration: none; /* Match Bootstrap's default nav-link style */
+}
+
+a:hover {
+  color: #6c4a7e !important; /* Lighter primary shade for hover */
+}
+
+/* Background primary and secondary */
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--bs-secondary) !important;
+}
+
+/* Link primary and secondary */
+.link-primary {
+  color: var(--bs-primary) !important;
+}
+
+.link-primary:hover {
+  color: #6c4a7e !important; /* Lighter shade for hover */
+}
+
+.link-secondary {
+  color: var(--bs-secondary) !important;
+}
+
+.link-secondary:hover {
+  color: #b89ea8 !important; /* Darker shade for hover */
+}
